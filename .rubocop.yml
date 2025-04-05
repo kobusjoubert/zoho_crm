@@ -22,6 +22,7 @@ Layout/HashAlignment:
 Layout/LineLength:
   AllowedPatterns:
     - initialize
+    - '#'
 
 Lint/MissingSuper:
   Enabled: false
@@ -42,6 +43,13 @@ Metrics/CyclomaticComplexity:
 
 Metrics/MethodLength:
   Enabled: false
+
+Metrics/ParameterLists:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Exclude:
+    - lib/zoho_crm/concerns/enumerable.rb
 
 Naming/FileName:
   Exclude:

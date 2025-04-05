@@ -26,6 +26,9 @@ module ZohoCrm
   # 404
   class NotFoundError < ClientError; end
 
+  # 405
+  class MethodNotAllowedError < ClientError; end
+
   # 406
   class NotAcceptableError < ClientError; end
 
@@ -40,6 +43,12 @@ module ZohoCrm
 
   # 410
   class GoneError < ClientError; end
+
+  # 413
+  class PayloadTooLargeError < ClientError; end
+
+  # 415
+  class UnsupportedMediaTypeError < ClientError; end
 
   # 422
   class UnprocessableEntityError < ClientError; end
