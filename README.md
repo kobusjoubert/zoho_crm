@@ -1,5 +1,7 @@
 # Active Call - Zoho CRM
 
+[![Gem Version](https://badge.fury.io/rb/active_call-zoho_crm.svg?icon=si%3Arubygems)](https://badge.fury.io/rb/active_call-zoho_crm)
+
 Zoho CRM exposes the [Zoho CRM API](https://www.zoho.com/crm/developer/docs/api) endpoints through service objects.
 
 - [Installation](#installation)
@@ -334,6 +336,20 @@ service = ZohoCrm::Record::UpsertService.call(
 
 ```ruby
 service = ZohoCrm::Record::DeleteService.call(module_name: 'Contacts', id: '')
+```
+
+</details>
+
+<details>
+<summary>Organization</summary>
+
+### Organization
+
+#### Get a organization
+
+```ruby
+service = ZohoCrm::Organization::GetService.call
+service.attributes
 ```
 
 </details>
