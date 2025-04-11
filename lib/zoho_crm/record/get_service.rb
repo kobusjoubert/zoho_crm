@@ -16,6 +16,8 @@ class ZohoCrm::Record::GetService < ZohoCrm::BaseService
 
   # Get a document.
   #
+  # https://www.zoho.com/crm/developer/docs/api/v7/get-records.html
+  #
   # ==== Examples
   #
   #   service = ZohoCrm::Record::GetService.call(module_name: 'Contacts', id: '')

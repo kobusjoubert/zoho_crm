@@ -20,6 +20,8 @@ class ZohoCrm::GrantToken::GetService < ZohoCrm::BaseService
 
   # Get refresh token from grant token.
   #
+  # https://www.zoho.com/crm/developer/docs/api/v7/access-refresh.html
+  #
   # ==== Examples
   #
   #   service = ZohoCrm::GrantToken::GetService.call(grant_token: '', client_id: '', client_secret: '')

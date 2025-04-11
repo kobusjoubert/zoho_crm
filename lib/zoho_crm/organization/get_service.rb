@@ -7,6 +7,8 @@ class ZohoCrm::Organization::GetService < ZohoCrm::BaseService
 
   # Get a document.
   #
+  # https://www.zoho.com/crm/developer/docs/api/v7/get-org-data.html
+  #
   # ==== Examples
   #
   #   service = ZohoCrm::Organization::GetService.call

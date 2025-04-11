@@ -18,6 +18,8 @@ class ZohoCrm::Record::SearchService < ZohoCrm::BaseService
 
   # List records.
   #
+  # https://www.zoho.com/crm/developer/docs/api/v7/search-records.html
+  #
   # ==== Examples
   #
   #   service = ZohoCrm::Record::SearchService.call(module_name: 'Contacts', email: 'eric.cartman@example.com').first

@@ -9,6 +9,8 @@ class ZohoCrm::AccessToken::GetService < ZohoCrm::BaseService
 
   # Get access token.
   #
+  # https://www.zoho.com/crm/developer/docs/api/v7/refresh.html
+  #
   # ==== Examples
   #
   #   service = ZohoCrm::AccessToken::GetService.call

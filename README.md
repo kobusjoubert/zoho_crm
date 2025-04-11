@@ -228,6 +228,8 @@ For custom modules, use their respective API names in the request URL. You can o
 #### List records
 
 ```ruby
+# https://www.zoho.com/crm/developer/docs/api/v7/get-records.html
+
 ZohoCrm::Record::ListService.call(module_name: 'Contacts', fields: 'Email,Last_Name', page: 1, per_page: 10).each do |facade|
   facade.attributes
 end
@@ -244,6 +246,8 @@ Columns to sort by are `id`, `Created_Time` and `Modified_Time`.
 #### Search records
 
 ```ruby
+# https://www.zoho.com/crm/developer/docs/api/v7/search-records.html
+
 ZohoCrm::Record::SearchService.call(module_name: 'Contacts', email: 'eric.cartman@example.com', page: 1, per_page: 10).each do |facade|
   facade.attributes
 end
@@ -284,6 +288,8 @@ ZohoCrm::Record::SearchService.call(module_name: 'Contacts', word: 'eric').map {
 #### Get a record
 
 ```ruby
+# https://www.zoho.com/crm/developer/docs/api/v7/get-records.html
+
 service = ZohoCrm::Record::GetService.call(module_name: 'Contacts', id: '')
 service.id
 service.attributes
@@ -296,7 +302,9 @@ service.attributes['Owner']['name']
 #### Create a record
 
 ```ruby
-service = ZohoCrm::Record::CreateService.call(
+# https://www.zoho.com/crm/developer/docs/api/v7/insert-records.html
+
+ZohoCrm::Record::CreateService.call(
   module_name: 'Contacts',
   data: {
     'Email' => 'eric.cartman@example.com',
@@ -309,7 +317,9 @@ service = ZohoCrm::Record::CreateService.call(
 #### Update a record
 
 ```ruby
-service = ZohoCrm::Record::UpdateService.call(
+# https://www.zoho.com/crm/developer/docs/api/v7/update-records.html
+
+ZohoCrm::Record::UpdateService.call(
   module_name: 'Contacts',
   data: {
     'id' => '',
@@ -321,7 +331,9 @@ service = ZohoCrm::Record::UpdateService.call(
 #### Upsert a record
 
 ```ruby
-service = ZohoCrm::Record::UpsertService.call(
+# https://www.zoho.com/crm/developer/docs/api/v7/upsert-records.html
+
+ZohoCrm::Record::UpsertService.call(
   module_name: 'Contacts',
   data: {
     'Email' => 'eric.cartman@example.com',
@@ -335,7 +347,9 @@ service = ZohoCrm::Record::UpsertService.call(
 #### Delete a record
 
 ```ruby
-service = ZohoCrm::Record::DeleteService.call(module_name: 'Contacts', id: '')
+# https://www.zoho.com/crm/developer/docs/api/v7/delete-records.html
+
+ZohoCrm::Record::DeleteService.call(module_name: 'Contacts', id: '')
 ```
 
 </details>
@@ -348,6 +362,8 @@ service = ZohoCrm::Record::DeleteService.call(module_name: 'Contacts', id: '')
 #### Get a organization
 
 ```ruby
+# https://www.zoho.com/crm/developer/docs/api/v7/get-org-data.html
+
 service = ZohoCrm::Organization::GetService.call
 service.attributes
 ```

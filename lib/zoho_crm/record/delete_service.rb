@@ -16,6 +16,8 @@ class ZohoCrm::Record::DeleteService < ZohoCrm::BaseService
 
   # Delete a record.
   #
+  # https://www.zoho.com/crm/developer/docs/api/v7/delete-records.html
+  #
   # ==== Examples
   #
   #   service = ZohoCrm::Record::DeleteService.call(module_name: 'Contacts', id: '')

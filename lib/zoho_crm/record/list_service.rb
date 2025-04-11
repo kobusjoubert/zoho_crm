@@ -18,6 +18,8 @@ class ZohoCrm::Record::ListService < ZohoCrm::BaseService
 
   # List records.
   #
+  # https://www.zoho.com/crm/developer/docs/api/v7/get-records.html
+  #
   # ==== Examples
   #
   #   service = ZohoCrm::Record::ListService.call(module_name: 'Contacts', fields: 'Email,Last_Name').first

@@ -16,6 +16,8 @@ class ZohoCrm::Record::CreateService < ZohoCrm::BaseService
 
   # Create a record.
   #
+  # https://www.zoho.com/crm/developer/docs/api/v7/insert-records.html
+  #
   # ==== Examples
   #
   #   service = ZohoCrm::Record::CreateService.call(

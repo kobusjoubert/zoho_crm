@@ -16,6 +16,8 @@ class ZohoCrm::Record::UpdateService < ZohoCrm::BaseService
 
   # Create a record.
   #
+  # https://www.zoho.com/crm/developer/docs/api/v7/update-records.html
+  #
   # ==== Examples
   #
   #   service = ZohoCrm::Record::UpdateService.call(
