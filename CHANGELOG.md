@@ -1,4 +1,7 @@
-## [Unreleased]
+## [0.1.1] - 2025-04-11
+
+- Update `CACHE_KEY` base `zoho_sign/...` -> `zoho_crm/...`
+- README updates with links to API endpoint docs
 
 ## [0.1.0] - 2025-04-02
 
