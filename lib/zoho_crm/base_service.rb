@@ -5,7 +5,7 @@ class ZohoCrm::BaseService < ActiveCall::Base
 
   self.abstract_class = true
 
-  CACHE_KEY = { access_token: 'zoho_sign/base_service/access_token' }.freeze
+  CACHE_KEY = { access_token: 'zoho_crm/base_service/access_token' }.freeze
 
   config_accessor :base_url, default: 'https://www.zohoapis.com/crm/v7', instance_writer: false
   config_accessor :cache, default: ActiveSupport::Cache::MemoryStore.new, instance_writer: false
