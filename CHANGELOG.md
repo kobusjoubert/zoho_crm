@@ -1,3 +1,7 @@
+## [0.1.3] - 2025-05-09
+
+- README and Gemspec description updates.
+
 ## [0.1.2] - 2025-04-11
 
 - No changes. Gem version 0.1.1 does not seem to be findable.
