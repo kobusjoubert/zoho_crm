@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ['Kobus Joubert']
   spec.email = ['kobus@translate3d.com']
 
-  spec.summary = 'Zoho CRM'
-  spec.description = 'Zoho CRM exposes the Zoho CRM API endpoints through service objects.'
+  spec.summary = 'Zoho CRM service objects'
+  spec.description = 'Zoho CRM exposes the Zoho CRM API endpoints through Active Call service objects.'
   spec.homepage = 'https://github.com/kobusjoubert/zoho_crm'
   spec.license = 'MIT'
   spec.required_ruby_version = '>= 3.1.0'
